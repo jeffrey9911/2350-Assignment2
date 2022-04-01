@@ -25,14 +25,6 @@ void Blooming::Apply(const Framebuffer::Sptr& gBuffer, const Framebuffer::Sptr& 
 	_shader->Bind();  
 	_shader->SetUniform("u_spread", _bloomSpread);
 	_shader->SetUniform("u_intens", -1.0f * _bloomIntensity);
-
-	
-	
-	
-	
-	//_shader->SetUniform("u_dLight", diffuse);
-	//gBuffer->BindAttachment(, 1); 
-	lBuffer->BindAttachment(RenderTargetAttachment::Color0, 1);
 }
 
 void Blooming::RenderImGui()

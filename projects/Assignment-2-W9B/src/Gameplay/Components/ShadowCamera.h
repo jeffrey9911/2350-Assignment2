@@ -103,4 +103,7 @@ protected:
 	glm::ivec2        _bufferResolution;
 	// The projection matrix of the light
 	glm::mat4         _projectionMatrix;
+
+	bool isOrtho = false;
+	float _matData[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 };

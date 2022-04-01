@@ -561,7 +561,10 @@ void DefaultSceneLayer::_CreateScene()
 			// Create and attach a renderer for the monkey
 			ShadowCamera::Sptr shadowCam = shadowCaster->Add<ShadowCamera>();
 			shadowCam->SetProjection(glm::perspective(glm::radians(120.0f), 1.0f, 0.1f, 100.0f));
+			
 		}
+
+		
 
 		/////////////////////////// UI //////////////////////////////
 		/*
