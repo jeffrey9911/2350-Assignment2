@@ -144,8 +144,8 @@ void DefaultSceneLayer::_CreateScene()
 		// Load in the meshes
 		MeshResource::Sptr characterMesh = ResourceManager::CreateAsset<MeshResource>("objs/pacman/pacman.obj");
 		MeshResource::Sptr terrainMesh = ResourceManager::CreateAsset<MeshResource>("objs/ground/terrain.obj");
-		MeshResource::Sptr goalMesh = ResourceManager::CreateAsset<MeshResource>("objs/Coin.obj");
-		MeshResource::Sptr carMesh = ResourceManager::CreateAsset<MeshResource>("objs/Car.obj");
+		MeshResource::Sptr goalMesh = ResourceManager::CreateAsset<MeshResource>("objs/coin/Coin.obj");
+		MeshResource::Sptr carMesh = ResourceManager::CreateAsset<MeshResource>("objs/car/Car.obj");
 		MeshResource::Sptr plainMesh = ResourceManager::CreateAsset<MeshResource>("objs/terrain/plainTerrain.obj");
 		MeshResource::Sptr rock1Mesh = ResourceManager::CreateAsset<MeshResource>("objs/rocks/rock1.obj");
 		MeshResource::Sptr branch1Mesh = ResourceManager::CreateAsset<MeshResource>("objs/branches/branches.obj");
