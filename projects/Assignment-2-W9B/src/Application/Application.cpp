@@ -45,6 +45,14 @@
 #include "Gameplay/Components/Light.h"
 #include "Gameplay/Components/ShadowCamera.h"
 
+#include "Gameplay/Components/SimpleObjectControl.h"
+#include "Gameplay/Components/SimpleCameraFollow.h"
+#include "Gameplay/Components/KillBehaviour.h"
+#include "Gameplay/Components/GoalBehaviour.h"
+#include "Gameplay/Components/SimpleLightFollow.h"
+#include "Gameplay/Components/SimpleToggle.h"
+#include "Gameplay/Components/ShaderContainer.h"
+
 // GUI
 #include "Gameplay/Components/GUI/RectTransform.h"
 #include "Gameplay/Components/GUI/GuiPanel.h"
@@ -275,6 +283,14 @@ void Application::_RegisterClasses()
 	ComponentManager::RegisterType<ParticleSystem>();
 	ComponentManager::RegisterType<Light>();
 	ComponentManager::RegisterType<ShadowCamera>();
+
+	ComponentManager::RegisterType<SimpleObjectControl>();
+	ComponentManager::RegisterType<SimpleCameraFollow>();
+	ComponentManager::RegisterType<KillBehaviour>();
+	ComponentManager::RegisterType<GoalBehaviour>();
+	ComponentManager::RegisterType<SimpleLightFollow>();
+	ComponentManager::RegisterType<SimpleToggle>();
+	ComponentManager::RegisterType<ShaderContainer>();
 }
 
 void Application::_Load() {

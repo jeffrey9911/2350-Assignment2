@@ -60,6 +60,8 @@ namespace Gameplay {
 		/// </summary>
 		const ShaderProgram::Sptr& GetShader() const;
 
+		void SwapShader(ShaderProgram::Sptr swapToShader);
+
 		/// <summary>
 		/// Handles applying this material's state to the OpenGL pipeline
 		/// Will bind the shader, update material uniforms, and bind textures

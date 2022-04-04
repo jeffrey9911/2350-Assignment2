@@ -60,6 +60,11 @@ namespace Gameplay {
 		return _shader;
 	}
 
+	void Material::SwapShader(ShaderProgram::Sptr swapToShader)
+	{
+		_shader = swapToShader;
+	}
+
 	void Material::Apply() {
 		if (_shader != nullptr) {
 			// Skip the reserved # of texture slots

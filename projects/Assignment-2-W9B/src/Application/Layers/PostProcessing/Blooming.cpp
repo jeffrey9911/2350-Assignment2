@@ -6,7 +6,7 @@
 
 Blooming::Blooming() :
 	PostProcessingLayer::Effect(),
-	_bloomSpread(1.0f),
+	_bloomSpread(0.2f),
 	_bloomIntensity(2.0f)
 {
 	Name = "Blooming Effect";

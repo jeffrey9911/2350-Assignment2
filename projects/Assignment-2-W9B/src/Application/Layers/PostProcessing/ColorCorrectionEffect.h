@@ -22,6 +22,13 @@ public:
 
 protected:
 	ShaderProgram::Sptr _shader;
+
+	Texture3D::Sptr lut_coo;
+	Texture3D::Sptr lut_war;
+	Texture3D::Sptr lut_cus;
+	Texture3D::Sptr lut_ori;
+
+
 	float _strength;
 };
 

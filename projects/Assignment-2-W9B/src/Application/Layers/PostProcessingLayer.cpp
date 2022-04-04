@@ -9,6 +9,8 @@
 #include "PostProcessing/OutlineEffect.h"
 #include "PostProcessing/Blooming.h"
 #include "PostProcessing/Pixelation.h"
+#include "PostProcessing/NightVision.h"
+#include "PostProcessing/Depth.h"
 
 PostProcessingLayer::PostProcessingLayer() :
 	ApplicationLayer()
@@ -36,6 +38,8 @@ void PostProcessingLayer::OnAppLoad(const nlohmann::json& config)
 	_effects.push_back(std::make_shared<OutlineEffect>());
 	_effects.push_back(std::make_shared<Blooming>());
 	_effects.push_back(std::make_shared<Pixelation>());
+	_effects.push_back(std::make_shared<NightVision>());
+	_effects.push_back(std::make_shared<Depth>());
 
 	Application& app = Application::Get();
 	const glm::uvec4& viewport = app.GetPrimaryViewport();
